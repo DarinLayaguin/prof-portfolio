@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js" integrity="sha512-16esztaSRplJROstbIIdwX3N97V1+pZvV33ABoG1H2OyTttBxEGkTsoIVsiP1iaTtM8b3+hu2kB6pQ4Clr5yug==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="./index.css">
+  <link rel="stylesheet" href="./navbar.css">
+</head>
+<body>
+  
+  <div class="navbar flex items-center justify-between px-3.5">
+    <div class="logo"> Logo </div>
+    
+    <ul class="p-2 items-center justify-center">
+      <li class="link">
+        <a href="#home"> Home </a>
+        <span class="line"></span>
+      </li>
+      <li class="link">
+        <a href="#about-me"> About Me </a>
+        <span class="line"></span>
+      </li>
+      <li class="link">
+        <a href="#skills"> Skills </a>
+        <span class="line"></span>
+      </li>
+      <li class="link">
+        <a href="#gallery"> Gallery </a>
+        <span class="line"></span>
+      </li>
+      <li class="link">
+        <a href="#contact"> Contact Me </a>
+        <span class="line"></span>
+      </li>
+    </ul>
+
+    <div class="hamburger">
+      <div class="icon-ham">
+        <ion-icon name="menu-outline"></ion-icon>
+      </div>
+      <div class="icon-exit">
+        <ion-icon name="close-outline"></ion-icon>
+      </div>
+    </div>
+  </div>
+
+  
+  <div class="intro mx-auto md:flex items-center justify-center gap-10" id="home about-me">
+    <div class="bg-page">
+      <img src="./bg.jpg" alt="">
+    </div>
+    <!-- Professional Photo -->
+    <img src="./dp.png" alt="Your Photo" class="prof-pic">
+
+    <div class="intro-me">
+      <!-- Introduction Text -->
+      <div class="tx-lf text-left px-4 py-2 mb-6">
+        <h1 class="text-4xl font-thin flex flex-col">
+          <span class="intl">
+            Hi, I am Darin 
+            <div class="underline"></div>
+          </span>
+          <!-- <br/> -->
+          <span class="font-bold text-blue-500"> 
+            Layaguin
+          </span>
+        </h1>
+        <div class="text-bt py-5 grid gap-y-5">
+          <p class="ty-1">Future Inspiring Web Developer | Graphic Designing | Tech Developer </p>
+          <p class="ty-1"> I love playing volleyball, watching anime, KDrame, playing piano and etc. </p>
+          <p> 
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+            <br/>
+            Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
+          </p>
+        </div>
+      </div>
+  
+      <!-- Social Media Links -->
+      <div class="social flex space-x-4 flex-wrap items-center justify-center">
+          <a href="https://twitter.com/your_twitter" target="_blank" class="text-blue-500 hover:underline">
+            <ion-icon name="logo-twitter"></ion-icon>  
+            Twitter
+          </a>
+          <a href="https://linkedin.com/in/your_linkedin" target="_blank" class="text-blue-500 hover:underline">
+            <ion-icon name="logo-linkedin"></ion-icon>  
+            LinkedIn
+          </a>
+          <a href="https://twitter.com/your_twitter" target="_blank" class="text-blue-500 hover:underline">
+            <ion-icon name="logo-instagram"></ion-icon>
+            Insta
+          </a>
+          <a href="https://linkedin.com/in/your_linkedin" target="_blank" class="text-blue-500 hover:underline">
+            <ion-icon name="logo-facebook"></ion-icon>
+            Facebook
+          </a>
+          <!-- Add more social media links as needed -->
+      </div>
+    </div>
+  </div>
+
+  <div class="tech-section container mx-auto mt-8 md:p-6 p-2" id="skills">
+    <h1> Tech Stack Skills </h1>
+    <!-- Tech Stack Section -->
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+      <!-- JavaScript -->
+      <div class="grid-item p-6 rounded-lg shadow-md text-center">
+          <img src="./logo/logo1.png" alt="JavaScript" class="w-16 h-16 mx-auto mb-4 object-cover">
+          <h2 class="text-xl font-semibold">JavaScript</h2>
+          <p class="text-gray-300">Front-end and Back-end scripting language.</p>
+      </div>
+      <!-- HTML -->
+      <div class="grid-item p-6 rounded-lg shadow-md text-center">
+          <img src="./logo/logo2.png" alt="HTML" class="w-16 h-16 mx-auto mb-4 object-cover">
+          <h2 class="text-xl font-semibold">HTML</h2>
+          <p class="text-gray-300">Markup language for creating web pages.</p>
+      </div>
+      <!-- CSS -->
+      <div class="grid-item p-6 rounded-lg shadow-md text-center">
+          <img src="./logo/logo3.png" alt="CSS" class="w-16 h-16 mx-auto mb-4 object-cover">
+          <h2 class="text-xl font-semibold">CSS</h2>
+          <p class="text-gray-300">Styling language for web pages.</p>
+      </div>
+
+      <!-- GSAP -->
+      <div class="grid-item p-6 rounded-lg shadow-md text-center">
+          <img src="./logo/logo4.svg" alt="GSAP" class="w-16 h-16 mx-auto mb-4 object-cover">
+          <h2 class="text-xl font-semibold">GSAP</h2>
+          <p class="text-gray-300">Animation library for the web.</p>
+      </div>
+      <!-- C# -->
+      <div class="grid-item p-6 rounded-lg shadow-md text-center">
+          <img src="./logo/logo5.svg" alt="C#" class="w-16 h-16 mx-auto mb-4 object-cover">
+          <h2 class="text-xl font-semibold">C#</h2>
+          <p class="text-gray-300">Versatile programming language for .NET.</p>
+      </div>
+
+      <!-- C++ -->
+      <div class="grid-item p-6 rounded-lg shadow-md text-center">
+          <img src="./logo/logo6.svg" alt="C++" class="w-16 h-16 mx-auto mb-4 object-cover">
+          <h2 class="text-xl font-semibold">C++</h2>
+          <p class="text-gray-300">Powerful and efficient general-purpose language.</p>
+      </div>
+
+      <!-- Python -->
+      <div class="grid-item p-6 rounded-lg shadow-md text-center">
+          <img src="./logo/logo7.png" alt="Python" class="w-16 h-16 mx-auto mb-4 object-cover">
+          <h2 class="text-xl font-semibold">Python</h2>
+          <p class="text-gray-300">High-level programming language.</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="portfolio-section container mx-auto mt-8 md:p-6 p-2" id="gallery">
+    <div class="portfolio-cover">
+      <h1> Portfolio Gallery </h1>
+      <div class="underline mt-4 mb-4"></div>
+      <!-- Portfolio Gallery Section -->
+      <div class="flex flex-wrap items-center justify-center gap-8">
+        <!-- Project 1 -->
+        <div class="relative group porf-item w-96 overflow-hidden">
+          <div class="overlay-img">
+            <img src="./project-image/" alt="Project 1" class="w-full h-48 object-cover">
+          </div>
+          <div class="flex items-center justify-center p-3">
+              <div class="text-left w-full text-white">
+                  <h2 class="text-base text-left font-semibold mb-2">Project Title 1</h2>
+                  <p class="text-xs text-gray-300 mb-4">Description of Project 1.</p>
+                  <a href="#" class="text-blue-500 hover:text-blue-300" target="_blank">
+                      <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 inline-block mr-2" viewBox="0 0 20 20" fill="currentColor">
+                        <path d="M10 12a2 2 0 100-4 2 2 0 000 4z"/>
+                        <path fill-rule="evenodd" d="M19 10a8 8 0 11-16 0 8 8 0 0116 0zm-1 0a7 7 0 10-14 0 7 7 0 0014 0z" clip-rule="evenodd"/>
+                      </svg>
+                      View Project
+                  </a>
+              </div>
+          </div>
+        </div>
+  
+        <!-- Project 2 -->
+        <div class="relative group porf-item w-96 overflow-hidden">
+          <div class="overlay-img">
+            <img src="./project-image/" alt="Project 2" class="w-full h-48 object-cover">
+          </div>
+          <div class="flex items-center justify-center p-3">
+            <div class="text-left w-full text-white">
+              <h2 class="text-base text-left font-semibold mb-2">Project Title 2</h2>
+              <p class="text-xs text-gray-300 mb-4">Description of Project 2.</p>
+              <a href="#" class="text-blue-500 hover:text-blue-300" target="_blank">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 inline-block mr-2" viewBox="0 0 20 20" fill="currentColor">
+                    <path d="M10 12a2 2 0 100-4 2 2 0 000 4z"/>
+                    <path fill-rule="evenodd" d="M19 10a8 8 0 11-16 0 8 8 0 0116 0zm-1 0a7 7 0 10-14 0 7 7 0 0014 0z" clip-rule="evenodd"/>
+                </svg>
+                View Project
+              </a>
+            </div>
+          </div>
+        </div>
+  
+        <!-- Project 3 -->
+        <div class="relative group porf-item w-96 overflow-hidden">
+          <div class="overlay-img">
+            <img src="./project-image/" alt="Project 3" class="w-full h-48 object-cover">
+          </div>
+          <div class="flex items-center justify-center p-3">
+            <div class="text-left w-full text-white">
+              <h2 class="text-base text-left font-semibold mb-2">Project Title 3</h2>
+              <p class="text-xs text-gray-300 mb-4">Description of Project 3.</p>
+              <a href="#" class="text-blue-500 hover:text-blue-300" target="_blank">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 inline-block mr-2" viewBox="0 0 20 20" fill="currentColor">
+                  <path d="M10 12a2 2 0 100-4 2 2 0 000 4z"/>
+                  <path fill-rule="evenodd" d="M19 10a8 8 0 11-16 0 8 8 0 0116 0zm-1 0a7 7 0 10-14 0 7 7 0 0014 0z" clip-rule="evenodd"/>
+                </svg>
+                View Project
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="contact-me container mx-auto mt-8 md:p-6 p-2" id="contact">
+
+    <!-- Contact Me Section -->
+    <div class="w-10/12 mx-auto bg-white p-8 rounded-md shadow-md">
+
+      <h1 class="text-2xl font-semibold text-gray-800 mb-6">Contact Me</h1>
+
+      <!-- Contact Form -->
+      <form action="#" method="post">
+
+        <!-- Name Input -->
+        <div class="mb-4">
+            <label for="name" class="block text-sm font-medium text-gray-600">Your Name</label>
+            <input type="text" id="name" name="name" class="mt-1 p-2 w-full border rounded-md">
+        </div>
+
+        <!-- Email Input -->
+        <div class="mb-4">
+            <label for="email" class="block text-sm font-medium text-gray-600">Your Email</label>
+            <input type="email" id="email" name="email" class="mt-1 p-2 w-full border rounded-md">
+        </div>
+
+        <!-- Message Input -->
+        <div class="mb-4">
+            <label for="message" class="block text-sm font-medium text-gray-600">Your Message</label>
+            <textarea id="message" name="message" rows="4" class="mt-1 p-2 w-full border rounded-md"></textarea>
+        </div>
+
+        <!-- Submit Button -->
+        <button type="submit" class="bg-blue-500 text-white px-4 py-2 rounded-md hover:bg-blue-600 focus:outline-none focus:ring focus:border-blue-300">
+            Send Message
+        </button>
+      </form>
+
+      <!-- Contact Information -->
+      <div class="">
+        <p class="text-sm text-gray-600">Feel free to reach out to me through the following channels:</p>
+        <main class="mt-2">
+          <li class="flex items-center space-x-2">
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-gray-700" viewBox="0 0 20 20" fill="currentColor">
+                <path d="M10 0C4.48 0 0 4.48 0 10c0 4.42 2.86 8.15 6.84 9.49c.5.09.68-.22.68-.48v-1.76c0-.88-.02-3.2-1.22-4.22c-.7-.66-1.62-.85-1.26-1.36c.12-.24.34-.3.66-.3c.32 0 .72.14 1.2.6c.68.65 1.48 1.7 2.75 1.7c1.3 0 2.3-.76 2.3-1.88v-2.1c0-1.3-.82-2.33-1.94-2.33-1.42 0-2.1 1.05-2.1 2.2v1.2H7.5V9h1.5V7.22c0-1.48.8-2.3 2.28-2.3c1.65 0 2.6 1.02 2.6 2.5v2.28h-1.75v2.25h1.75v8.38c0 .26-.18.57-.7.48C13.16 18.15 10 14.42 10 10c0-2.3 1.02-4.3 2.63-5.48C13.46 3.95 13.92 3 15.2 3c.86 0 1.6.25 1.8.18c.12-.05.26-.18.2-.4c-.06-.22-.24-.72-1.06-1.1C16.16 1.1 15.08 1 14.52 1z"/>
+            </svg>
+            <span class="hover:text-white text-gray-700">Email: your.email@example.com</span>
+          </li>
+          <li class="flex items-center space-x-2 mt-2">
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-gray-700" viewBox="0 0 20 20" fill="currentColor">
+                <path d="M2 3a1 1 0 011-1h14a1 1 0 011 1v6a1 1 0 01-1 1h-1.34l-1.7 4.24a1 1 0 01-.95.64H6.99a1 1 0 01-.95-.63L4.34 11H3a1 1 0 01-1-1V3zm14 2H4v4h6.34a1 1 0 01.95.63L12 15.17l1.7-4.24a1 1 0 01.95-.63H16V5z"/>
+            </svg>
+            <span class="hover:text-white text-gray-700">Phone: (123) 456-7890</span>
+          </li>
+          <!-- Add more contact information as needed -->
+        </main>
+      </div>
+    </div>
+  </div>
+
+
+  <script> 
+    const ham = document.querySelector('.hamburger')
+    const ul = document.querySelector('.navbar ul')
+    const iconHam = document.querySelector('.navbar .icon-ham')
+    const iconExit = document.querySelector('.navbar .icon-exit')
+
+    ham.addEventListener("click",() => {
+      ul.classList.toggle("show")
+      iconHam.classList.toggle('show')
+      iconExit.classList.toggle('show')
+      
+      gsap.fromTo('span.line',{
+        width:"0%",
+      },{
+        width:"50%",
+        ease:"power2.inOut",
+        duration:1.7,
+        stagger:0.1,
+      })
+    })
+  </script>
+
+
+</body>
+</html>

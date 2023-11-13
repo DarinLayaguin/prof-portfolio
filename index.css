@@ -1,0 +1,164 @@
+@tailwindcss base;
+@tailwindcss components;
+@tailwindcss utilities;
+
+:root {
+  --profile-width:325px;
+}
+
+@media (max-width:850px) {
+  :root {
+    --profile-width:100%;
+  }
+}
+
+body, html, * {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  position: relative;
+}
+
+body {
+  background: #2c2b2b;
+  height: 100%;
+}
+
+a {
+  color: #fff;
+}
+
+.intro {
+  position: relative;
+  width: 100%;
+  min-height: 100vh;
+  height: 100%;
+  padding: 10px;
+  /* width: ; */
+  color: #fff;
+  background: rgba(255, 166, 0, 0.584);
+}
+
+.intro .prof-pic {
+  width: var(--profile-width);
+  height: 60vh;
+}
+
+.intro .prof-pic {
+  padding: 7.5px;
+  /* border-top-left-radius: 10px; */
+  /* border-top-bottom-radius: 10px; */
+  background:  rgba(69, 86, 168, 0.584);
+  /* background: #1b1a1ac7; */
+  object-fit: cover;
+}
+
+.intro-me {
+  /* width: 50vw; */
+  /* background: #1b1a1ac7; */
+}
+
+.intro-me .tx-lf {
+  height: 100%;
+  background: #1b1a1ac7;
+}
+
+.intro-me .intl {
+  display: grid;
+}
+
+.intro-me .ty-1 {
+  font-size: 20px;
+}
+
+.intro-me .underline {
+  width: 100%;
+  /* width: 15vw; */
+  height: 2px;
+  background: rgba(21, 109, 250, 0.584);
+}
+
+.social a {
+  color: #fff;
+  padding: 5px;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+.social a:hover {
+  background: rgba(21, 109, 250, 0.584);
+}
+
+.tech-section {
+  color: #fff;
+}
+
+.tech-section h1 {
+  font-size: 30px;
+}
+
+.tech-section .grid-item {
+  background: #1b1a1ac7;
+  color: #ffff;
+}
+
+.tech-section .grid-item h2 {
+  color:rgba(21, 109, 250, 0.849);
+}
+
+.portfolio-section {
+  /* background: #ffffffa6; */
+}
+
+.portfolio-cover {
+}
+
+.portfolio-section h1 {
+  font-size: clamp(20px, 2vw, 3vw);
+  color: #fff;
+}
+
+.portfolio-section .underline {
+  width: 100%;
+  height: 1.5px;
+  background: rgba(106, 152, 226, 0.584);
+}
+
+.porf-item {
+  background: #1b1a1ac7;
+}
+
+.overlay-img {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+.overlay-img::after {
+  content: '👁️';
+  position: absolute;
+  left: 0;
+  width: 0%;
+  height:0%;
+  top: 0%;
+  background: #1b1a1ac7;
+  transition: all 1s cubic-bezier(0.165, 0.84, 0.44, 1);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  font-size: 30px;
+  overflow: hidden;
+  cursor: pointer;
+}
+
+.overlay-img:hover::after {
+  width: 100%;
+  height: 100%;
+}
+
+@media (max-width:850px) {
+  
+}
